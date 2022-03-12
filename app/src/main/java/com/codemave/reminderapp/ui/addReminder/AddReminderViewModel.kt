@@ -55,8 +55,8 @@ private fun createNotificationChannel(context: Context) {
     // Create the NotificationChannel, but only on API 26+ because
     // the NotificationChannel class is new and not in the support library
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-        val name = "NotificationChannelName"
-        val descriptionText = "NotificationChannelDescriptionText"
+        val name = "reminderNotif"
+        val descriptionText = ""
         val importance = NotificationManager.IMPORTANCE_DEFAULT
         val channel = NotificationChannel("CHANNEL_ID", name, importance).apply {
             description = descriptionText
